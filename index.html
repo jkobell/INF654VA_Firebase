@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Reader Comments</title>
+</head>
+<body>
+    <h1>Reader Feedback</h1>
+    <div class="listcontent">
+        <ul id="comments_list"></ul>
+    </div>
+    <hr style="height: 10px;">
+    <h1>Submit a Comment</h1>
+    <div class="content">
+        <form id="add_comment">
+            <div class="input-wrapper">
+                <label for="email">Email: </label>
+                <input type="text" name="email" placeholder="email"> 
+            </div>
+            <div class="input-wrapper">
+                <label for="friendlyname">Preferred name: </label>
+                <input type="text" name="friendlyname" placeholder="preferred name">
+            </div>
+            <div class="input-wrapper">
+                <label for="region">Location: </label>
+                <input type="text" name="region" placeholder="location - region">
+            </div>
+            <div class="input-wrapper">
+                <label for="role">Requested role: </label>
+                <input type="text" name="role" placeholder="requested role">
+            </div>
+            <div class="checkbox-wrapper">
+                <label for="active">Subscriber: </label>
+                <input class="formcheckbox" type="checkbox" name="active">
+            </div>
+            <div class="input-wrapper">
+                <label for="comment">Add comment: </label>
+                <textarea name="comment" id="comment" rows="10" cols="82" placeholder="enter comment"></textarea>
+            </div>
+            <div class="formbutton-wrapper">
+                <button>Add Comment</button>
+            </div>
+        </form>
+    </div>
+        <script type="module" src="fb.js">
+        </script>
+
+        <script type="module" src="app.js">            
+        </script>
+    </body>
+</html>
